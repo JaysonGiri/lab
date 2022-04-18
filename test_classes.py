@@ -1,6 +1,7 @@
 import pytest
 from classes import *
 
+
 class Test:
     tv1 = Television()
 
@@ -79,6 +80,3 @@ class Test:
         self.tv1.volume_up()
         self.tv1.volume_down()
         assert self.tv1.__str__() == 'TV status: Is on = True, Channel = 0, Volume = 1'
-
-
-
