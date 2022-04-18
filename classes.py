@@ -14,7 +14,7 @@ class Television:
         Constructor to create initial state of a TV remote object
         """
         self.__channel = Television.MIN_CHANNEL
-        self.__volume = Television.MAX_VOLUME
+        self.__volume = Television.MIN_VOLUME
         self.__status = False
         """"
         - Create a private variable to store the TV channel. It should be set to the minimum TV channel by default.
