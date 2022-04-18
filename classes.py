@@ -9,7 +9,7 @@ class Television:
     MIN_VOLUME = 0      # Minimum TV volume
     MAX_VOLUME = 2      # Maximum TV volume
 
-    def __init__(self):
+    def __init__(self) -> None:
         """
         Constructor to create initial state of a TV remote object
         """
@@ -21,7 +21,7 @@ class Television:
         - Create a private variable to store the TV volume. It should be set to the minimum TV volume by default.
         - Create a private variable to store the TV status. The TV should start when it is off.
         """
-    def power(self):
+    def power(self) -> None:
         """
         Method to turn on/off TV (pressing power button on TV remote).
         :return: TV status
@@ -36,7 +36,7 @@ class Television:
         - If called on a TV object that is on, the TV object should be turned off.
         """
 
-    def channel_up(self):
+    def channel_up(self) -> None:
         """
         Method to change channel up
         :return: New TV channel
@@ -54,7 +54,7 @@ class Television:
         - If the method is called when one is on the MAX_CHANNEL, it should take the TV channel back to the MIN_CHANNEL.
         """
 
-    def channel_down(self):
+    def channel_down(self) -> None:
         """
         Method to change channel down
         :return: New TV channel
@@ -72,7 +72,7 @@ class Television:
         - If the method is called when one is on the MIN_CHANNEL, it should take the TV channel back to the MAX_CHANNEL.
         """
 
-    def volume_up(self):
+    def volume_up(self) -> None:
         """
         Method to turn volume up
         :return: Higher TV volume
@@ -89,7 +89,7 @@ class Television:
         - It should only work for a TV that is on.
         - If the method is called when one is on the MAX_VOLUME, the volume should not be adjusted.
         """
-    def volume_down(self):
+    def volume_down(self) -> None:
         """
         Method to turn volume down
         :return: Lower TV volume
@@ -107,7 +107,7 @@ class Television:
         - If the method is called when one is on the MIN_VOLUME, the volume should not be adjusted.
         """
 
-    def __str__(self):
+    def __str__(self) -> str:
         """
         Method to display TV status, channel, and volume
         :return: TV on/off status, New TV channel, Higher/Lower TV volume
